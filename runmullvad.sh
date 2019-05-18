@@ -1,5 +1,5 @@
 #!/bin/bash
 
-country = $1
+path="/etc/openvpn/mullvad_$1.conf"
 
-sudo openvpn --config /etc/openvpn/mullvad_$country.conf
+sudo openvpn --config $path
